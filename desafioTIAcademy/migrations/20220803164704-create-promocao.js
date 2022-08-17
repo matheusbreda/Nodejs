@@ -8,15 +8,6 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       }, 
-      nome: {
-        type: Sequelize.STRING
-      },
-      descricao: {
-        type: Sequelize.STRING
-      },
-      validade: {
-        type: Sequelize.DATEONLY
-      },
       EmpresaId: {
         allowNull: false,
         type: Sequelize.INTEGER,
@@ -26,6 +17,15 @@ module.exports = {
         },
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
+      },
+      nome: {
+        type: Sequelize.STRING
+      },
+      descricao: {
+        type: Sequelize.STRING
+      },
+      validade: {
+        type: Sequelize.DATEONLY
       },
       createdAt: {
         allowNull: false,

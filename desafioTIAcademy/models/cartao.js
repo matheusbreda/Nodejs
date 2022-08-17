@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
       Cartao.belongsTo(models.Cliente,
         {foreignKey: 'ClienteId', as: 'cliente_pedido'});
       Cartao.belongsToMany(models.Promocao,
-        {foreignKey: 'PromocaoId', through: 'Compra', as: 'promocao_cartao'});
+        {foreignKey: 'PromocaoId', through: 'Compra'});
       Cartao.hasMany(models.Compra,
         {foreignKey: 'CartaoId', as: 'cartao_compra'});
     }

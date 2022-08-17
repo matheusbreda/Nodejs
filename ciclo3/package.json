@@ -4,7 +4,8 @@
   "description": "Sistema para controle de Serviços e Pedidos",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Controller.js"
   },
   "author": "Matheus",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "sequelize": "^6.21.3"
   },
   "devDependencies": {
+    "nodemon": "^2.0.19",
     "sequelize-cli": "^6.4.1"
   }
 }

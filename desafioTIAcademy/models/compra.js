@@ -12,9 +12,9 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       Compra.belongsTo(models.Cartao,
-        {foreignKey: 'CartaoId', as: 'compra_cartao'});
+        {foreignKey: "CartaoId", as: 'compra_cartao'});
       Compra.belongsTo(models.Promocao,
-        {foreignKey: 'PromocaoId', as: 'compra_promocao'});
+        {foreignKey: "PromocaoId", as: 'compra_promocao'});
     }
   }
   Compra.init({
@@ -22,8 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     quantidade: DataTypes.INTEGER,
     valor: DataTypes.FLOAT,
     PromocaoId: DataTypes.INTEGER,
-    CartaoId: DataTypes.INTEGER,
-    
+    CartaoId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Compra',

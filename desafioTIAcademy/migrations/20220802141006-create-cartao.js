@@ -8,12 +8,6 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       }, 
-      dataCartao: {
-        type: Sequelize.DATEONLY
-      },
-      validade: {
-        type: Sequelize.DATEONLY
-      },
       ClienteId: {
         allowNull: false,
         type: Sequelize.INTEGER,
@@ -23,6 +17,12 @@ module.exports = {
         },
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
+      },
+      dataCartao: {
+        type: Sequelize.DATEONLY
+      },
+      validade: {
+        type: Sequelize.DATEONLY
       },
       createdAt: {
         allowNull: false,
